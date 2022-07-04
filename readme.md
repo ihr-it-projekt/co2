@@ -15,7 +15,7 @@ This is a test application based on Symfony (https://symfony.com/).
 - run ``php ./tools/composer.phar dev-setup``
 - run ``php ./bin/console doctrine:database:create``
 - run ``php ./bin/console doctrine:migration:migrate``
-- if you have installed Symfony local web server run ``symfony serv`` otherwise use your prefer solution to run your server with that code
+- if you have installed Symfony local web server run ``symfony serve`` otherwise use your prefer solution to run your server with that code
 
 ## API Doc
 
