@@ -1,11 +1,8 @@
 nelmio_api_doc:
     documentation:
-        servers:
-            - url: http://localhost/api/v1
-              description: API over HTTP
         info:
-            title: CO2
-            description: A CO2 Sensor Repository
+            title: My App
+            description: This is an awesome app!
             version: 1.0.0
     areas: # to filter documented areas
         path_patterns:

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<psalm
+    xmlns="https://getpsalm.org/schema/config"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://getpsalm.org/schema/config tools/psalm/vendor/vimeo/psalm/config.xsd"
+    cacheDirectory=".psalm.cache"
+    resolveFromConfigFile="true"
+    checkForThrowsDocblock="true"
+    findUnusedPsalmSuppress="true"
+    errorLevel="1"
+>
+    <projectFiles>
+        <directory name="."/>
+        <ignoreFiles>
+            <directory name="tests"/>
+            <directory name="tools"/>
+            <directory name="var"/>
+            <directory name="vendor"/>
+            <!-- phpcs fixer is installed as a tool - so the classes are not available globally -->
+            <file name=".php-cs-fixer.dist.php" />
+        </ignoreFiles>
+    </projectFiles>
+</psalm>
